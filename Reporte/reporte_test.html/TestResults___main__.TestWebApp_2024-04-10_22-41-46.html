@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-04-10 22:41:46</p>
+                <p class='attribute'><strong>Duration: </strong>153.80 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 1, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestWebApp</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_view_profile</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Error en test_view_profile: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=123.0.2420.81)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7ED635B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C4AB2+220434]
+	(No symbol) [0x00007FF7ED3EDCD7]
+	(No symbol) [0x00007FF7ED3CB537]
+	(No symbol) [0x00007FF7ED45A139]
+	(No symbol) [0x00007FF7ED46CA82]
+	(No symbol) [0x00007FF7ED453B93]
+	(No symbol) [0x00007FF7ED42960E]
+	(No symbol) [0x00007FF7ED4287CC]
+	(No symbol) [0x00007FF7ED4291C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7ED7E58FC+1052188]
+	(No symbol) [0x00007FF7ED49FFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7ED54150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7ED538E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7ED7E4865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5CD2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C85B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C86EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5BFEE1+201025]
+	BaseThreadInitThunk [0x00007FFF9F957344+20]
+	RtlUserThreadStart [0x00007FFFA02A26B1+33]
+
+</p><p style="color:maroon;">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=123.0.2420.81)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7ED635B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C4AB2+220434]
+	(No symbol) [0x00007FF7ED3EDCD7]
+	(No symbol) [0x00007FF7ED3CB537]
+	(No symbol) [0x00007FF7ED45A139]
+	(No symbol) [0x00007FF7ED46CA82]
+	(No symbol) [0x00007FF7ED453B93]
+	(No symbol) [0x00007FF7ED42960E]
+	(No symbol) [0x00007FF7ED4287CC]
+	(No symbol) [0x00007FF7ED4291C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7ED7E58FC+1052188]
+	(No symbol) [0x00007FF7ED49FFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7ED54150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7ED538E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7ED7E4865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5CD2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C85B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C86EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5BFEE1+201025]
+	BaseThreadInitThunk [0x00007FFF9F957344+20]
+	RtlUserThreadStart [0x00007FFFA02A26B1+33]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Carlos Feliz Recio\Desktop\6to Cuatrimestre\6.   PROGRAMACION III\Módulo 6. Pruebas de Software\Test\index.py", line 68, in test_view_profile
+    self.take_screenshot("perfil_abierto")
+  File "c:\Users\Carlos Feliz Recio\Desktop\6to Cuatrimestre\6.   PROGRAMACION III\Módulo 6. Pruebas de Software\Test\index.py", line 93, in take_screenshot
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 822, in save_screenshot
+    return self.get_screenshot_as_file(filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 798, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 832, in get_screenshot_as_png
+    return b64decode(self.get_screenshot_as_base64().encode("ascii"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 843, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=123.0.2420.81)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7ED635B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C4AB2+220434]
+	(No symbol) [0x00007FF7ED3EDCD7]
+	(No symbol) [0x00007FF7ED3CB537]
+	(No symbol) [0x00007FF7ED45A139]
+	(No symbol) [0x00007FF7ED46CA82]
+	(No symbol) [0x00007FF7ED453B93]
+	(No symbol) [0x00007FF7ED42960E]
+	(No symbol) [0x00007FF7ED4287CC]
+	(No symbol) [0x00007FF7ED4291C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7ED7E58FC+1052188]
+	(No symbol) [0x00007FF7ED49FFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7ED54150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7ED538E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7ED7E4865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5CD2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C85B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C86EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5BFEE1+201025]
+	BaseThreadInitThunk [0x00007FFF9F957344+20]
+	RtlUserThreadStart [0x00007FFFA02A26B1+33]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Carlos Feliz Recio\Desktop\6to Cuatrimestre\6.   PROGRAMACION III\Módulo 6. Pruebas de Software\Test\index.py", line 75, in test_view_profile
+    self.take_screenshot("error_view_profile")
+  File "c:\Users\Carlos Feliz Recio\Desktop\6to Cuatrimestre\6.   PROGRAMACION III\Módulo 6. Pruebas de Software\Test\index.py", line 93, in take_screenshot
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 822, in save_screenshot
+    return self.get_screenshot_as_file(filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 798, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 832, in get_screenshot_as_png
+    return b64decode(self.get_screenshot_as_base64().encode("ascii"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 843, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=123.0.2420.81)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7ED635B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C4AB2+220434]
+	(No symbol) [0x00007FF7ED3EDCD7]
+	(No symbol) [0x00007FF7ED3CB537]
+	(No symbol) [0x00007FF7ED45A139]
+	(No symbol) [0x00007FF7ED46CA82]
+	(No symbol) [0x00007FF7ED453B93]
+	(No symbol) [0x00007FF7ED42960E]
+	(No symbol) [0x00007FF7ED4287CC]
+	(No symbol) [0x00007FF7ED4291C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7ED7E58FC+1052188]
+	(No symbol) [0x00007FF7ED49FFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7ED54150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7ED538E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7ED7E4865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5CD2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C85B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C86EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5BFEE1+201025]
+	BaseThreadInitThunk [0x00007FFF9F957344+20]
+	RtlUserThreadStart [0x00007FFFA02A26B1+33]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 1, Error: 1 -- Duration: 153.80 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-04-10 22:46:45</p>
+                <p class='attribute'><strong>Duration: </strong>21.54 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 3, Pass: 3</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestWebApp</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_open_users_page</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Error en test_open_users_page: Message: element not interactable
+  (Session info: MicrosoftEdge=123.0.2420.81)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7ED635B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C4AB2+220434]
+	(No symbol) [0x00007FF7ED3EDB91]
+	(No symbol) [0x00007FF7ED435BE4]
+	(No symbol) [0x00007FF7ED42A856]
+	(No symbol) [0x00007FF7ED453F2A]
+	(No symbol) [0x00007FF7ED42A0E7]
+	(No symbol) [0x00007FF7ED429FAD]
+	(No symbol) [0x00007FF7ED454210]
+	(No symbol) [0x00007FF7ED42A0E7]
+	(No symbol) [0x00007FF7ED46D149]
+	(No symbol) [0x00007FF7ED453B93]
+	(No symbol) [0x00007FF7ED42960E]
+	(No symbol) [0x00007FF7ED4287CC]
+	(No symbol) [0x00007FF7ED4291C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7ED7E58FC+1052188]
+	(No symbol) [0x00007FF7ED49FFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7ED54150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7ED538E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7ED7E4865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5CD2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C85B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5C86EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7ED5BFEE1+201025]
+	BaseThreadInitThunk [0x00007FFF9F957344+20]
+	RtlUserThreadStart [0x00007FFFA02A26B1+33]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_view_profile</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 3, Pass: 3 -- Duration: 21.54 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
